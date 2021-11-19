@@ -1,2 +1,2 @@
-# kivy_app
+# kivy_apps
 Applications with Python and Kivy

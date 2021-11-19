@@ -1,0 +1,63 @@
+<MyButton@Button>:
+    text: ""
+    font_size: "45sp"
+
+
+MDFloatLayout:
+
+    MDGridLayout:
+        size_hint: (0.5, 0.5)
+        pos_hint: {"center_x": 0.5, "center_y": 0.65}
+        cols: 3
+        rows: 3
+
+        MyButton:
+            id: btn1
+            on_release: app.presser(btn1)
+        MyButton:
+            id: btn2
+            on_release: app.presser(btn2)
+        MyButton:
+            id: btn3
+            on_release: app.presser(btn3)
+
+        MyButton:
+            id: btn4
+            on_release: app.presser(btn4)
+        MyButton:
+            id: btn5
+            on_release: app.presser(btn5)
+        MyButton:
+            id: btn6
+            on_release: app.presser(btn6)
+            
+        MyButton:
+            id: btn7
+            on_release: app.presser(btn7)
+        MyButton:
+            id: btn8
+            on_release: app.presser(btn8)
+        MyButton:
+            id: btn9
+            on_release: app.presser(btn9)
+    
+    MDLabel:
+        id: score
+        font_size: "28sp"
+        text: "X Goes First!"
+        halign: "center"
+        pos_hint: {"center_x": 0.5, "center_y": 0.3}
+
+    MDRaisedButton:
+        id: restart
+        font_size: "20sp"
+        text: "Restart Game"
+        pos_hint: {"center_x": 0.5, "center_y": 0.15}
+        on_release: app.restart()
+
+    MDLabel:
+        id: game
+        font_size: "18sp"
+        text: "X wins: 0  |  O wins: 0"
+        halign: "center"
+        pos_hint: {"center_x": 0.5, "center_y": 0.05}
